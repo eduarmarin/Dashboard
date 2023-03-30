@@ -59,15 +59,15 @@
     "a b"
     "c b"
     "c d";
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     padding: 2px;
-    gap: 4px;
+    gap: 2px;
     /* background-color: blue; */
 }
 .part{
-    max-width: 25px;
-    height: auto;
+    max-width: 20px;
+    height:auto;
     background-color: aliceblue;
     border-radius: 1px;
 }
@@ -84,11 +84,11 @@
 .dd{
     grid-area: d;
 }
-/* @media screen and (min-width: 880px){
+@media screen and (min-width: 880px){
     .dropdown{
         display:none;
     }
-} */
+}
 
 .content{
     background-color: gray  ;
@@ -177,13 +177,13 @@
     background-color: lightgray;
 }
 .rownav1{
-    gap: 8px;
-    width: 30%;
+    /* gap: 8px; */
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
-    justify-content: flex-end;
-    margin-right: 40px;
+    /* justify-content: space-between; */
+    /* margin-right: 40px; */
     /* background-color: yellow; */
 }
 .odinimagen img{
@@ -191,8 +191,28 @@
     height: auto;
     /* background-color: aqua; */
 }
+.dropdown{
+    /* background-color: red; */
+    margin-right: 90px;
+}
 
+@media screen and (max-width: 600px){
+    .itemrowhide{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    .sidebarmenu{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
 @media screen and (max-width: 993px){
+    .odinimagen img{
+        width: 45px;
+        height: auto;
+    }
     .sidebarmenu a{
         font-size: 0.8rem;
     }
@@ -221,7 +241,7 @@
         gap: 0;
         padding: 0px;
         margin: 0px;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
     }
     .rownav3{

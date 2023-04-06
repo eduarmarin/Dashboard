@@ -1,4 +1,4 @@
-body { 
+body{ 
     height:100%; 
     width: 100%;
     margin: 0px;
@@ -292,7 +292,7 @@ body {
 .announcements{
     display: flex;
     flex-direction: column; 
-    margin-right: 12px;  
+    margin-right: 12px; 
 }
 .tittlenews{
     gap: 12px;
@@ -313,7 +313,7 @@ body {
     width: 40vh;
     display: flex;
     flex-direction: column;
-    margin-top: 12px;
+    margin: 12px;
     padding: 4px;
     background-color: white;
     border-radius: 10px;
@@ -430,6 +430,9 @@ button{
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+    .news{
+        width: 25%;
     }
 }
 @media screen and (max-width: 993px){
